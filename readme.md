@@ -1,4 +1,9 @@
-#TODO:
+
+PROJECT IN PROCESS
+
+
+
+# TODO:
 
 - Main content (pages)
 - RSS
@@ -7,7 +12,7 @@
 
 
 
-#Dependencies:
+# Dependencies:
 
 - Ubuntu
 -- apt-get install libpulse-dev
