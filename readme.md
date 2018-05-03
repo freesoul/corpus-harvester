@@ -1,18 +1,9 @@
 
-PROJECT IN PROCESS
+# PROJECT IN PROCESS
 
 
 
-# TODO:
-
-- Main content (pages)
-- RSS
-- PDF
-- Scribd
-
-
-
-# Dependencies:
+## Dependencies:
 
 - Ubuntu
 -- apt-get install libpulse-dev
