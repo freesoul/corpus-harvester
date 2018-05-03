@@ -1,0 +1,22 @@
+{
+    "salud" : ["biología", "anatomía", "cromosoma", "ribosomas", "histona",
+    "\"evolución de las especies\"", "\"gregor mendel\"", "medicina", "patologías",
+    "bacterias", "microorganismos", "inflamación", "\"respuesta inmunitaria\"",
+    "citología", "\"regulación homeostática\"", "circadiano", "biosfera"],
+
+    "ingeniería" : ["\"álgebra abstracta\"", "\"teoría de números\"", "\"ecuación diofántica\"",
+    "\"proceso industrial\"", "ingeniería", "software", "\"fabricación industrial\"",
+    "electromagnetico", "aeroespacial", "física", "\"Revolución Industrial\"", "programación"],
+
+    "bellasartes" : ["\"Van Gogh\"", "renacentista", "\"danza moderna\"", "romanticismo",
+    "barroco", "música", "expresionismo", "basílica", "sentimientos", "escultor","picasso",
+    "homero", "\"charles chaplin\"", "tragicomedia", "\"pintura al óleo\""],
+
+    "humanidades" : ["shakespeare", "homero", "sócrates", "literatura", "lingüística",
+    "psicología", "filosofía", "crítica", "\"gabriel garcía márquez\"","\"generación del 98\"",
+    "\"caverna de platón\"", "\"antropología cultural\""],
+
+    "derecho" : ["\"derecho civil\"", "legislatura", "\"jurisdicción\"", "constitución",
+    "pudiere", "postulados", "jurisprudencia", "\"tratado internacional\"", "legislador",
+    "\"derecho mercantil\"", "\"ley de sociedades\""]
+}
