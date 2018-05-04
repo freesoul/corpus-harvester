@@ -8,7 +8,7 @@ MIN_LINE_LEN = 20
 MIN_ALPHA_PROPORTION = 0.80
 MAX_ALONE_CHARS = 0.1
 
-def clean_text(texto, lower=True, stopwords=[], merge=False):
+def clean_text(texto, lower=True, stopwords=[], merge=False, max_words=0, join_str=' '):
 
     #Limpiar HTML
     re_clean_html = re.compile('<.*?>')
@@ -33,8 +33,10 @@ def clean_text(texto, lower=True, stopwords=[], merge=False):
     #Elimina demasiadas letras sueltas
     output = [line for line in output if (sum(len(w)==1 for w in line.split())/len(line.split()))<=MAX_ALONE_CHARS]
 
-    if lower: output = [s.lower() for s in output]
+    if lower: output = [line.lower() for line in output]
 
-    if merge: output = ' '.join(output)
+    if merge:
+        output = join_str.join(output)
+        if max_words: output = join_str.join(output.split()[:max_words])
 
     return output

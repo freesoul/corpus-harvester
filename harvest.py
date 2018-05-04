@@ -1,23 +1,26 @@
 # -*- coding: utf-8 -*-
 
-from bs4 import BeautifulSoup
-import requests
-from urllib.parse import urlparse
 import json
 import os
 import random
 from time import sleep
 import re
-from modules.clean_text import clean_text
-import urllib
 import logging
-import shutil
-from newspaper import Article
 import ssl
+
+import requests
+from urllib.parse import urlparse
+import urllib
 import textract
+from newspaper import Article
+from bs4 import BeautifulSoup
+
+from modules.clean_text import clean_text
+
 
 class Harvest:
 
+    # This holds information for all query sets.
     query_data = {}
 
     # Config
@@ -29,7 +32,9 @@ class Harvest:
 
     DATA_FOLDER = 'data'
     TMP_FOLDER = 'tmp'
-    TMP_FILE = 'tmp_file'
+    TMP_FILE = 'tmp_file.pdf'
+
+    DATA_FILE_TEMPLATE = 'data_{0}.txt' # {0} is a counter for each source
 
     LOG_FILE = 'logs/harvest.log'
     logger = None
@@ -43,17 +48,22 @@ class Harvest:
 
     USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
 
-    MIN_USEFULL_BYTES_PER_SOURCE = 500
+    # General parsing
+    MIN_USEFULL_BYTES_PER_SOURCE = 1000
+    MIN_WORDS_PER_SOURCE = 500
+    MAX_WORDS_PER_SOURCE = 5000
 
-
-    #Textract file parsing
-    TEXTRACT_SUPPORTED_FILES = ['csv', 'doc', 'docx', 'eml', 'epub', 'odt',
+    # Textract file parsing
+    SUPPORTED_FILES = ['csv', 'doc', 'docx', 'eml', 'epub', 'odt',
                                 'pdf', 'pptx', 'rtf', 'xlsx', 'xls', 'json', 'msg']
+
     HTML_PAGES = ['html', 'htm', 'php', 'asp', 'aspx']
+
     SUPPORTED_MIME_TYPES = ['text/csv','application/msword','application/epub+zip',
                             'application/json','application/vnd.oasis.opendocument.text',
                             'application/pdf','application/vnd.ms-powerpoint','application/rtf',
                             'application/vnd.ms-excel','application/xml']
+
     MAX_REMOTE_FILE_SIZE = 3 * 1024 * 1024
     HTML = 1
     SUPPORTED_FILE = 2
@@ -69,16 +79,41 @@ class Harvest:
 
 
     def __init__(self):
+        self._set_logger()
+        self.logger.info("Starting")
+
+
+
+    def _set_logger(self):
         self.logger = logging.getLogger('harvest')
-        hdlr = logging.FileHandler(self.LOG_FILE)
+
+        # Formatter
         formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
-        hdlr.setFormatter(formatter)
-        self.logger.addHandler(hdlr)
-        self.logger.setLevel(logging.WARNING)
+
+        # File handler
+        fileHandler = logging.FileHandler(self.LOG_FILE)
+        fileHandler.setFormatter(formatter)
+        self.logger.addHandler(fileHandler)
+
+        # Console handler
+        consoleHandler = logging.StreamHandler()
+        consoleHandler.setFormatter(formatter)
+        self.logger.addHandler(consoleHandler)
+
+        self.logger.setLevel(logging.INFO)
 
 
+
+
+    #########################################
+    #
+    #   Loads the query json, prepares the
+    #   random queries, and prepare folders.
+    #
+    #########################################
 
     def load_seeds(self,sFile):
+
         query_data={}
 
         # Load seeds
@@ -118,13 +153,23 @@ class Harvest:
 
 
 
+
+    #########################################
+    #
+    #   Scraps google for links.
+    #
+    #########################################
+
     def get_google_links(self):
 
         if self.DEBUG_USE_LINKS:
 
+            self.logger.info("Using debug links...")
             for seed in self.query_data:
                 with open(self.query_data[seed]["links_file"]) as f:
-                    self.query_data[seed]["links"] = [link.strip() for link in f.readlines()]
+                    links = [link.strip() for link in f.readlines()]
+                    self.query_data[seed]["links"] = links
+                    self.logger.info("Found {0} links for {1}".format(len(links), seed))
 
         else:
 
@@ -135,6 +180,8 @@ class Harvest:
                 f.close()
 
             for seed in self.query_data:
+
+                self.logger.info("Scrapping links for {0}...".format(seed))
 
                 links = []
 
@@ -158,6 +205,7 @@ class Harvest:
                 links = [link for link in links if 'http'==link[:4]] #sometimes missing schema
                 links = [link for link in links if not any([re.search(pattern, link) for pattern in discard_links])]
 
+                self.logger.info("Found {0} links".format(len(links)))
                 self.query_data[seed]["links"] = links
 
                 if self.DEBUG_GENERATE_LINKS:
@@ -170,18 +218,53 @@ class Harvest:
 
 
 
-    def get_remote_texts(self,remove_previous=True):
-        for seed in self.query_data:
-            # Remove previous files
-            if remove_previous: shutil.rmtree(self.query_data[seed]["data_folder"])
 
+    #########################################
+    #
+    #   Scraps text from articles and files
+    #   and cleans it.
+    #
+    #########################################
+
+    def get_remote_texts(self,remove_previous=True):
+
+        for seed in self.query_data:
+
+            self.logger.info("#"*80)
+            self.logger.info("# Extracting text from remote sources for {0}!".format(seed))
+            self.logger.info("#"*80)
+
+            current_folder = self.query_data[seed]["data_folder"]
+
+            # Find out in which file we start saving data.
+            if remove_previous:
+                file_counter = 1
+                for file_name in os.listdir(current_folder):
+                    file_path = os.path.join(current_folder, file_name)
+                    try:
+                        if os.path.isfile(file_path):
+                            os.unlink(file_path)
+                    except Exception as e:
+                        print(e)
+            else:
+                num_files = len([f for f in os.listdir(current_folder) if os.path.isfile(f)])
+                file_counter = num_files + 1
+
+
+            # Iterate links found for this seed.
             links = self.query_data[seed]["links"]
+
             for link in links:
+
                 file_type, file_size = self._get_link_info(link)
 
+                ############################
+                #
+                #   HTML link
+                #
+                ############################
                 if file_type == self.HTML:
 
-                    self.logger.info("Reading webpage")
                     article = Article(link)
                     try:
                         article.download()
@@ -190,22 +273,51 @@ class Harvest:
                         self.logger.info("Failed downloading webpage, skipping.")
                         continue
 
-                    resulting_text = clean_text(article.text, merge=True)
+                    resulting_text = clean_text(
+                        article.text,
+                        merge=True,
+                        max_words=self.MAX_WORDS_PER_SOURCE
+                        )
+
+                    num_words = len(resulting_text.split())
 
                     if len(resulting_text) < self.MIN_USEFULL_BYTES_PER_SOURCE:
                         self.logger.info("Article not enough long, skipping.")
                         continue
 
-                    print("Article {0}\t{1}".format(
+                    if num_words < self.MIN_WORDS_PER_SOURCE:
+                        self.logger.info("Source: Not enough words, skipping.")
+                        continue
+
+                    self.logger.info("Article {0}w\t{1}b\t{2}".format(
+                    num_words,
                     str(len(resulting_text)),
                     link
                     ))
+
+                    # Save to file
+                    file_path = '{0}/{1}'.format(
+                    current_folder,
+                    self.DATA_FILE_TEMPLATE.format(file_counter)
+                    )
+
+                    with open(file_path, 'w') as f:
+                        f.write(resulting_text)
+                        f.close()
+
+                    file_counter+=1
+
+                ############################
+                #
+                #   File link
+                #
+                ############################
 
                 elif file_type == self.SUPPORTED_FILE:
                     if not file_size:
                         self.logger.info("Could not read filesize, skipping.")
                         continue
-                    if file_size <= self.MAX_REMOTE_FILE_SIZE:
+                    if file_size > self.MAX_REMOTE_FILE_SIZE:
                         self.logger.info("Filesize too big ({0}), skipipng.".format(file_size))
                         continue
 
@@ -214,35 +326,66 @@ class Harvest:
                     self._download_file(link, "{0}/{1}".format(self.TMP_FOLDER, self.TMP_FILE))
 
                     try:
-                        file_parsed = textract.process(local_file_path)
-                    except:
+                        file_parsed = textract.process(local_file_path).decode('utf-8')
+                    except Exception as e:
                         self.logger.info("Problem parsing file, skipping.")
+                        self.logger.info(str(e))
                         continue
 
-                    resulting_text = clean_text(file_parsed, merge=True)
+                    resulting_text = clean_text(
+                        file_parsed,
+                        merge=True,
+                        max_words=self.MAX_WORDS_PER_SOURCE
+                        )
+
+                    num_words = len(resulting_text.split())
 
                     if len(resulting_text) < self.MIN_USEFULL_BYTES_PER_SOURCE:
-                        self.logger.info("Extracted text from file not enough long, skipping.")
+                        self.logger.info("Source: Extracted text not enough long, skipping.")
                         continue
 
-                    print("File {0}\t{1}".format(
+                    if num_words < self.MIN_WORDS_PER_SOURCE:
+                        self.logger.info("Source: Not enough words, skipping.")
+                        continue
+
+                    self.logger.info("File {0}w\t{1}b\t{2}".format(
+                    num_words,
                     str(len(resulting_text)),
                     link
                     ))
+
+                    # Save to file
+                    file_path = '{0}/{1}'.format(
+                    current_folder,
+                    self.DATA_FILE_TEMPLATE.format(file_counter)
+                    )
+
+                    with open(file_path, 'w') as f:
+                        f.write(resulting_text)
+                        f.close()
+
+                    file_counter+=1
+
+                ############################
+                #
+                #   Unknown link type
+                #
+                ############################
 
                 else:
                     self.logger.info("MIME type not compatible, skipping")
                     continue
 
-                # Test if supported file
-
-                # Try to extract article
-
-                # Clean
-
-                # Save
         return
 
+
+
+    ##########################################################
+    #
+    #   Tries to know which kind of file it is. Firstly, by
+    #   the link extension. Secondly, by HTTP(s) header.
+    #
+    ##########################################################
 
     def _get_link_info(self, link):
 
@@ -255,7 +398,7 @@ class Harvest:
         url_path = urlparse(link).path
         extension = os.path.splitext(url_path)[1]
         if len(extension):
-            if extension[1:] in self.TEXTRACT_SUPPORTED_FILES:
+            if extension[1:] in self.SUPPORTED_FILES:
                 file_type = self.SUPPORTED_FILE
             elif extension[1:] in self.HTML_PAGES:
                 file_type = self.HTML
@@ -266,13 +409,20 @@ class Harvest:
             if 'text/html' in headers['content-type']:
                 file_type = self.HTML
             elif headers['content-type'] in self.SUPPORTED_MIME_TYPES:
-                file_type = self.TEXTRACT_SUPPORTED_FILES
+                file_type = self.SUPPORTED_FILES
 
         # Get file size
         file_size =  None if 'content-length' not in headers else int(headers['content-length'])
 
         return file_type, file_size
 
+
+
+    ##########################################################
+    #
+    #   This downloads a file locally
+    #
+    ##########################################################
 
     def _download_file(self, link, local_file_path):
         if not os.path.isdir(self.TMP_FOLDER): os.mkdir(self.TMP_FOLDER)
