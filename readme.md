@@ -12,6 +12,7 @@ Finally, it cleans the text leaving only words separated by spaces.
 Each source is extracted in its correspondant folder in a separate .txt file.
 
 
+
 # Dependencies
 
 This program has been only tested on Ubuntu alongisde Python3.5 for the moment. Once you have this context, to use it:
@@ -27,3 +28,12 @@ Install Newspaper to extract main content from webpages (I tested library Goose,
 
 3. pip3 install newspaper3k
 
+
+
+# Using harvester
+
+1. Install dependencies
+
+2. Configure seeds.json
+
+3. Run harvest.py
