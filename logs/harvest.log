@@ -426,3 +426,414 @@
 2018-05-04 13:34:04,001 INFO Downloading file
 2018-05-04 13:34:07,564 INFO File 5000w	31658b	http://raed.academy/wp-content/uploads/2017/05/Web_LibroRAed_Turbon59.pdf
 2018-05-04 13:34:09,608 INFO Article not enough long, skipping.
+2018-05-06 21:56:00,790 INFO Starting
+2018-05-06 21:56:00,828 INFO Using debug links...
+2018-05-06 21:56:00,834 INFO Found 45 links for ingeniería
+2018-05-06 21:56:00,835 INFO Found 44 links for salud
+2018-05-06 21:56:00,835 INFO Found 41 links for bellasartes
+2018-05-06 21:56:00,836 INFO Found 39 links for derecho
+2018-05-06 21:56:00,836 INFO Found 41 links for humanidades
+2018-05-06 21:56:00,836 INFO ################################################################################
+2018-05-06 21:56:00,836 INFO # Extracting text from remote sources for ingeniería!
+2018-05-06 21:56:00,836 INFO ################################################################################
+2018-05-06 21:56:01,955 INFO Article not enough long, skipping.
+2018-05-06 22:04:14,213 INFO Starting
+2018-05-06 22:04:14,214 INFO Using debug links...
+2018-05-06 22:04:14,214 INFO Found 41 links for humanidades
+2018-05-06 22:04:14,214 INFO Found 45 links for ingeniería
+2018-05-06 22:04:14,214 INFO Found 41 links for bellasartes
+2018-05-06 22:04:14,215 INFO Found 39 links for derecho
+2018-05-06 22:04:14,215 INFO Found 44 links for salud
+2018-05-06 22:04:14,215 INFO ################################################################################
+2018-05-06 22:04:14,215 INFO # Extracting text from remote sources for humanidades!
+2018-05-06 22:04:14,215 INFO ################################################################################
+2018-05-06 22:04:15,847 INFO Failed downloading webpage, skipping.
+2018-05-06 22:04:19,326 INFO Starting
+2018-05-06 22:04:19,327 INFO Using debug links...
+2018-05-06 22:04:19,327 INFO Found 44 links for salud
+2018-05-06 22:04:19,327 INFO Found 41 links for bellasartes
+2018-05-06 22:04:19,327 INFO Found 39 links for derecho
+2018-05-06 22:04:19,327 INFO Found 45 links for ingeniería
+2018-05-06 22:04:19,328 INFO Found 41 links for humanidades
+2018-05-06 22:04:19,328 INFO ################################################################################
+2018-05-06 22:04:19,328 INFO # Extracting text from remote sources for salud!
+2018-05-06 22:04:19,328 INFO ################################################################################
+2018-05-06 22:04:20,457 INFO Downloading file
+2018-05-06 22:04:30,331 INFO File 5000w	31658b	http://www.bdigital.unal.edu.co/6465/1/598914.2012.pdf
+2018-05-06 22:04:36,556 INFO Article not enough long, skipping.
+2018-05-06 22:04:45,007 INFO Article not enough long, skipping.
+2018-05-06 22:04:45,782 INFO Failed downloading webpage, skipping.
+2018-05-06 22:04:46,731 INFO Article 794w	5019b	https://zaguan.unizar.es/record/48314?ln=es
+2018-05-06 22:04:52,178 INFO Article not enough long, skipping.
+2018-05-06 22:04:52,720 INFO Downloading file
+2018-05-06 22:04:59,733 INFO File 5000w	31658b	http://www.lourdes-luengo.es/unidadesbio/microbiologia/25Microbiologia.pdf
+2018-05-06 22:05:09,858 INFO Starting
+2018-05-06 22:05:09,858 INFO Using debug links...
+2018-05-06 22:05:09,859 INFO Found 39 links for derecho
+2018-05-06 22:05:09,859 INFO Found 41 links for bellasartes
+2018-05-06 22:05:09,859 INFO Found 41 links for humanidades
+2018-05-06 22:05:09,859 INFO Found 45 links for ingeniería
+2018-05-06 22:05:09,859 INFO Found 44 links for salud
+2018-05-06 22:05:09,859 INFO ################################################################################
+2018-05-06 22:05:09,859 INFO # Extracting text from remote sources for derecho!
+2018-05-06 22:05:09,860 INFO ################################################################################
+2018-05-06 22:05:10,033 INFO Could not read filesize, skipping.
+2018-05-06 22:05:10,207 INFO Downloading file
+2018-05-06 22:05:10,448 INFO Problem parsing file, skipping.
+2018-05-06 22:05:10,449 INFO The file "tmp/tmp_file" can not be found.
+Is this the right path/to/file/you/want/to/extract?
+2018-05-06 22:05:11,367 INFO Source: Not enough words, skipping.
+2018-05-06 22:05:12,597 INFO Starting
+2018-05-06 22:05:12,597 INFO Using debug links...
+2018-05-06 22:05:12,597 INFO Found 44 links for salud
+2018-05-06 22:05:12,597 INFO Found 41 links for humanidades
+2018-05-06 22:05:12,598 INFO Found 39 links for derecho
+2018-05-06 22:05:12,598 INFO Found 41 links for bellasartes
+2018-05-06 22:05:12,598 INFO Found 45 links for ingeniería
+2018-05-06 22:05:12,598 INFO ################################################################################
+2018-05-06 22:05:12,598 INFO # Extracting text from remote sources for salud!
+2018-05-06 22:05:12,598 INFO ################################################################################
+2018-05-06 22:05:13,172 INFO Downloading file
+2018-05-06 22:05:18,507 INFO Problem parsing file, skipping.
+2018-05-06 22:05:18,508 INFO The file "tmp/tmp_file" can not be found.
+Is this the right path/to/file/you/want/to/extract?
+2018-05-06 22:05:19,455 INFO Article not enough long, skipping.
+2018-05-06 22:05:21,617 INFO Failed downloading webpage, skipping.
+2018-05-06 22:07:08,714 INFO Starting
+2018-05-06 22:07:08,714 INFO Using debug links...
+2018-05-06 22:07:08,714 INFO Found 44 links for salud
+2018-05-06 22:07:08,715 INFO Found 41 links for bellasartes
+2018-05-06 22:07:08,715 INFO Found 45 links for ingeniería
+2018-05-06 22:07:08,715 INFO Found 41 links for humanidades
+2018-05-06 22:07:08,715 INFO Found 39 links for derecho
+2018-05-06 22:07:08,715 INFO ################################################################################
+2018-05-06 22:07:08,715 INFO # Extracting text from remote sources for salud!
+2018-05-06 22:07:08,716 INFO ################################################################################
+2018-05-06 22:07:09,923 INFO Downloading file
+2018-05-06 22:08:12,684 INFO Starting
+2018-05-06 22:08:12,684 INFO Using debug links...
+2018-05-06 22:08:12,685 INFO Found 41 links for humanidades
+2018-05-06 22:08:12,685 INFO Found 44 links for salud
+2018-05-06 22:08:12,685 INFO Found 45 links for ingeniería
+2018-05-06 22:08:12,685 INFO Found 41 links for bellasartes
+2018-05-06 22:08:12,685 INFO Found 39 links for derecho
+2018-05-06 22:08:12,685 INFO ################################################################################
+2018-05-06 22:08:12,686 INFO # Extracting text from remote sources for humanidades!
+2018-05-06 22:08:12,686 INFO ################################################################################
+2018-05-06 22:08:14,151 INFO Starting
+2018-05-06 22:08:14,151 INFO Using debug links...
+2018-05-06 22:08:14,151 INFO Found 45 links for ingeniería
+2018-05-06 22:08:14,151 INFO Found 41 links for humanidades
+2018-05-06 22:08:14,152 INFO Found 39 links for derecho
+2018-05-06 22:08:14,152 INFO Found 44 links for salud
+2018-05-06 22:08:14,152 INFO Found 41 links for bellasartes
+2018-05-06 22:08:14,152 INFO ################################################################################
+2018-05-06 22:08:14,152 INFO # Extracting text from remote sources for ingeniería!
+2018-05-06 22:08:14,152 INFO ################################################################################
+2018-05-06 22:08:14,761 INFO Failed downloading webpage, skipping.
+2018-05-06 22:08:16,866 INFO Starting
+2018-05-06 22:08:16,866 INFO Using debug links...
+2018-05-06 22:08:16,866 INFO Found 41 links for humanidades
+2018-05-06 22:08:16,866 INFO Found 41 links for bellasartes
+2018-05-06 22:08:16,867 INFO Found 45 links for ingeniería
+2018-05-06 22:08:16,867 INFO Found 39 links for derecho
+2018-05-06 22:08:16,867 INFO Found 44 links for salud
+2018-05-06 22:08:16,867 INFO ################################################################################
+2018-05-06 22:08:16,867 INFO # Extracting text from remote sources for humanidades!
+2018-05-06 22:08:16,867 INFO ################################################################################
+2018-05-06 22:08:17,598 INFO Failed downloading webpage, skipping.
+2018-05-06 22:08:19,032 INFO Starting
+2018-05-06 22:08:19,032 INFO Using debug links...
+2018-05-06 22:08:19,032 INFO Found 41 links for humanidades
+2018-05-06 22:08:19,032 INFO Found 41 links for bellasartes
+2018-05-06 22:08:19,033 INFO Found 45 links for ingeniería
+2018-05-06 22:08:19,033 INFO Found 44 links for salud
+2018-05-06 22:08:19,033 INFO Found 39 links for derecho
+2018-05-06 22:08:19,033 INFO ################################################################################
+2018-05-06 22:08:19,033 INFO # Extracting text from remote sources for humanidades!
+2018-05-06 22:08:19,033 INFO ################################################################################
+2018-05-06 22:08:19,790 INFO Failed downloading webpage, skipping.
+2018-05-06 22:08:20,916 INFO Failed downloading webpage, skipping.
+2018-05-06 22:08:28,489 INFO Starting
+2018-05-06 22:08:28,490 INFO Using debug links...
+2018-05-06 22:08:28,490 INFO Found 41 links for humanidades
+2018-05-06 22:08:28,490 INFO Found 41 links for bellasartes
+2018-05-06 22:08:28,490 INFO Found 45 links for ingeniería
+2018-05-06 22:08:28,491 INFO Found 44 links for salud
+2018-05-06 22:08:28,491 INFO Found 39 links for derecho
+2018-05-06 22:08:28,491 INFO ################################################################################
+2018-05-06 22:08:28,491 INFO # Extracting text from remote sources for humanidades!
+2018-05-06 22:08:28,491 INFO ################################################################################
+2018-05-06 22:08:30,844 INFO Failed downloading webpage, skipping.
+2018-05-06 22:08:32,108 INFO Starting
+2018-05-06 22:08:32,108 INFO Using debug links...
+2018-05-06 22:08:32,108 INFO Found 41 links for bellasartes
+2018-05-06 22:08:32,109 INFO Found 41 links for humanidades
+2018-05-06 22:08:32,109 INFO Found 44 links for salud
+2018-05-06 22:08:32,109 INFO Found 45 links for ingeniería
+2018-05-06 22:08:32,109 INFO Found 39 links for derecho
+2018-05-06 22:08:32,109 INFO ################################################################################
+2018-05-06 22:08:32,110 INFO # Extracting text from remote sources for bellasartes!
+2018-05-06 22:08:32,110 INFO ################################################################################
+2018-05-06 22:08:32,931 INFO Failed downloading webpage, skipping.
+2018-05-06 22:08:34,099 INFO Starting
+2018-05-06 22:08:34,100 INFO Using debug links...
+2018-05-06 22:08:34,100 INFO Found 44 links for salud
+2018-05-06 22:08:34,100 INFO Found 41 links for humanidades
+2018-05-06 22:08:34,100 INFO Found 39 links for derecho
+2018-05-06 22:08:34,101 INFO Found 45 links for ingeniería
+2018-05-06 22:08:34,101 INFO Found 41 links for bellasartes
+2018-05-06 22:08:34,101 INFO ################################################################################
+2018-05-06 22:08:34,101 INFO # Extracting text from remote sources for salud!
+2018-05-06 22:08:34,101 INFO ################################################################################
+2018-05-06 22:08:34,726 INFO Downloading file
+2018-05-06 22:09:49,497 INFO Starting
+2018-05-06 22:09:49,497 INFO Using debug links...
+2018-05-06 22:09:49,497 INFO Found 44 links for salud
+2018-05-06 22:09:49,497 INFO Found 41 links for humanidades
+2018-05-06 22:09:49,498 INFO Found 45 links for ingeniería
+2018-05-06 22:09:49,498 INFO Found 39 links for derecho
+2018-05-06 22:09:49,498 INFO Found 41 links for bellasartes
+2018-05-06 22:09:49,498 INFO ################################################################################
+2018-05-06 22:09:49,498 INFO # Extracting text from remote sources for salud!
+2018-05-06 22:09:49,498 INFO ################################################################################
+2018-05-06 22:09:50,027 INFO Downloading file
+2018-05-06 22:09:55,273 INFO File 5000w	32427b	http://www.bdigital.unal.edu.co/6465/1/598914.2012.pdf
+2018-05-06 22:09:56,221 INFO Article not enough long, skipping.
+2018-05-06 22:09:59,285 INFO Article not enough long, skipping.
+2018-05-06 22:10:00,143 INFO Failed downloading webpage, skipping.
+2018-05-06 22:10:00,980 INFO Article 794w	5019b	https://zaguan.unizar.es/record/48314?ln=es
+2018-05-06 22:10:04,387 INFO Article not enough long, skipping.
+2018-05-06 22:10:04,857 INFO Downloading file
+2018-05-06 22:10:12,624 INFO File 5000w	31934b	http://www.lourdes-luengo.es/unidadesbio/microbiologia/25Microbiologia.pdf
+2018-05-06 22:10:13,869 INFO Could not read filesize, skipping.
+2018-05-06 22:10:14,544 INFO Downloading file
+2018-05-06 22:10:14,955 INFO Problem parsing file, skipping.
+2018-05-06 22:10:14,956 INFO The command `pdftotext tmp/tmp_file.pdf -` failed with exit code 1
+------------- stdout -------------
+b''------------- stderr -------------
+b"Syntax Warning: May not be a PDF file (continuing anyway)\nSyntax Error (6): Illegal character <21> in hex string\nSyntax Error (8): Illegal character <6f> in hex string\nSyntax Error (10): Illegal character <74> in hex string\nSyntax Error (11): Illegal character <79> in hex string\nSyntax Error (12): Illegal character <70> in hex string\nSyntax Error (15): Illegal character <68> in hex string\nSyntax Error (16): Illegal character <74> in hex string\nSyntax Error (17): Illegal character <6d> in hex string\nSyntax Error (18): Illegal character <6c> in hex string\nSyntax Error (23): Illegal character <68> in hex string\nSyntax Error (24): Illegal character <74> in hex string\nSyntax Error (25): Illegal character <6d> in hex string\nSyntax Error (26): Illegal character <6c> in hex string\nSyntax Error (28): Illegal character <6c> in hex string\nSyntax Error (30): Illegal character <6e> in hex string\nSyntax Error (31): Illegal character <67> in hex string\nSyntax Error (32): Illegal character <3d> in hex string\nSyntax Error (33): Illegal character <22> in hex string\nSyntax Error (35): Illegal character <73> in hex string\nSyntax Error (36): Illegal character <2d> in hex string\nSyntax Error (38): Illegal character <53> in hex string\nSyntax Error (39): Illegal character <22> in hex string\nSyntax Error (47): Illegal character <68> in hex string\nSyntax Error (59): Illegal character <6d> in hex string\nSyntax Error (61): Illegal character <74> in hex string\nSyntax Error (65): Illegal character <68> in hex string\nSyntax Error (67): Illegal character <72> in hex string\nSyntax Error (68): Illegal character <73> in hex string\nSyntax Error (70): Illegal character <74> in hex string\nSyntax Error (71): Illegal character <3d> in hex string\nSyntax Error (72): Illegal character <22> in hex string\nSyntax Error (73): Illegal character <55> in hex string\nSyntax Error (74): Illegal character <54> in hex string\nSyntax Error (76): Illegal character <2d> in hex string\nSyntax Error (78): Illegal character <22> in hex string\nSyntax Error (87): Illegal character <6d> in hex string\nSyntax Error (89): Illegal character <74> in hex string\nSyntax Error (92): Illegal character <6e> in hex string\nSyntax Error (94): Illegal character <6d> in hex string\nSyntax Error (96): Illegal character <3d> in hex string\nSyntax Error (97): Illegal character <22> in hex string\nSyntax Error (98): Illegal character <76> in hex string\nSyntax Error (99): Illegal character <69> in hex string\nSyntax Error (101): Illegal character <77> in hex string\nSyntax Error (102): Illegal character <70> in hex string\nSyntax Error (103): Illegal character <6f> in hex string\nSyntax Error (104): Illegal character <72> in hex string\nSyntax Error (105): Illegal character <74> in hex string\nSyntax Error (106): Illegal character <22> in hex string\nSyntax Error (109): Illegal character <6f> in hex string\nSyntax Error (110): Illegal character <6e> in hex string\nSyntax Error (111): Illegal character <74> in hex string\nSyntax Error (113): Illegal character <6e> in hex string\nSyntax Error (114): Illegal character <74> in hex string\nSyntax Error (115): Illegal character <3d> in hex string\nSyntax Error (116): Illegal character <22> in hex string\nSyntax Error (117): Illegal character <77> in hex string\nSyntax Error (118): Illegal character <69> in hex string\nSyntax Error (120): Illegal character <74> in hex string\nSyntax Error (121): Illegal character <68> in hex string\nSyntax Error (122): Illegal character <3d> in hex string\nSyntax Error (125): Illegal character <76> in hex string\nSyntax Error (126): Illegal character <69> in hex string\nSyntax Error (129): Illegal character <2d> in hex string\nSyntax Error (130): Illegal character <77> in hex string\nSyntax Error (131): Illegal character <69> in hex string\nSyntax Error (133): Illegal character <74> in hex string\nSyntax Error (134): Illegal character <68> in hex string\nSyntax Error (135): Illegal character <22> in hex string\nSyntax Error (144): Illegal character <6d> in hex string\nSyntax Error (146): Illegal character <74> in hex string\nSyntax Error (149): Illegal character <68> in hex string\nSyntax Error (150): Illegal character <74> in hex string\nSyntax Error (151): Illegal character <74> in hex string\nSyntax Error (152): Illegal character <70> in hex string\nSyntax Error (153): Illegal character <2d> in hex string\nSyntax Error (155): Illegal character <71> in hex string\nSyntax Error (156): Illegal character <75> in hex string\nSyntax Error (157): Illegal character <69> in hex string\nSyntax Error (158): Illegal character <76> in hex string\nSyntax Error (159): Illegal character <3d> in hex string\nSyntax Error (160): Illegal character <22> in hex string\nSyntax Error (161): Illegal character <58> in hex string\nSyntax Error (162): Illegal character <2d> in hex string\nSyntax Error (163): Illegal character <55> in hex string\nSyntax Error (165): Illegal character <2d> in hex string\nSyntax Error (167): Illegal character <6f> in hex string\nSyntax Error (168): Illegal character <6d> in hex string\nSyntax Error (169): Illegal character <70> in hex string\nSyntax Error (171): Illegal character <74> in hex string\nSyntax Error (172): Illegal character <69> in hex string\nSyntax Error (174): Illegal character <6c> in hex string\nSyntax Error (176): Illegal character <22> in hex string\nSyntax Error (179): Illegal character <6f> in hex string\nSyntax Error (180): Illegal character <6e> in hex string\nSyntax Error (181): Illegal character <74> in hex string\nSyntax Error (183): Illegal character <6e> in hex string\nSyntax Error (184): Illegal character <74> in hex string\nSyntax Error (185): Illegal character <3d> in hex string\nSyntax Error (186): Illegal character <22> in hex string\nSyntax Error (187): Illegal character <49> in hex string\nSyntax Error (189): Illegal character <3d> in hex string\nSyntax Error (192): Illegal character <47> in hex string\nSyntax Error (194): Illegal character <22> in hex string\nSyntax Error (195): Illegal character <2f> in hex string\nSyntax Error: Couldn't find trailer dictionary\nSyntax Error: Couldn't find trailer dictionary\nSyntax Error: Couldn't read xref table\n"
+2018-05-06 22:10:44,796 INFO Article 5000w	31822b	http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0034-74502008000300012
+2018-05-06 22:10:51,350 INFO Article 1458w	9062b	https://jolimu.wordpress.com/2008/12/10/biomaquinas-sin-evolucion-la-paradoja-anti-darwin/
+2018-05-06 22:10:53,366 INFO Article not enough long, skipping.
+2018-05-06 22:10:53,642 INFO Filesize too big (21222014), skipipng.
+2018-05-06 22:10:54,461 INFO Could not read filesize, skipping.
+2018-05-06 22:10:55,173 INFO Article 1165w	7426b	http://m.patatabrava.com/es/apunte/347731/preguntas-microbiologia
+2018-05-06 22:10:55,340 INFO Downloading file
+2018-05-06 22:10:56,183 INFO Source: Not enough words, skipping.
+2018-05-06 22:10:57,041 INFO Filesize too big (8428434), skipipng.
+2018-05-06 22:10:57,322 INFO Downloading file
+2018-05-06 22:11:02,272 INFO File 5000w	31658b	http://raed.academy/wp-content/uploads/2017/05/Web_LibroRAed_Turbon59.pdf
+2018-05-06 22:11:04,164 INFO Article not enough long, skipping.
+2018-05-06 22:11:05,740 INFO Filesize too big (5244132), skipipng.
+2018-05-06 22:11:08,056 INFO Article not enough long, skipping.
+2018-05-06 22:11:16,327 INFO Source: Not enough words, skipping.
+2018-05-06 22:11:16,827 INFO Downloading file
+2018-05-06 22:11:21,621 INFO File 3956w	25975b	http://www.redalyc.org/pdf/1793/179346558009.pdf
+2018-05-06 22:11:22,828 INFO Filesize too big (6312841), skipipng.
+2018-05-06 22:11:24,937 INFO Article not enough long, skipping.
+2018-05-06 22:11:27,561 INFO Article 1834w	11419b	http://www.infocatolica.com/blog/notelacuenten.php/1410260458-complejidades-irreducibles-la
+2018-05-06 22:11:29,663 INFO Article not enough long, skipping.
+2018-05-06 22:11:30,722 INFO Article not enough long, skipping.
+2018-05-06 22:11:31,556 INFO Downloading file
+2018-05-06 22:11:34,374 INFO File 3429w	22632b	http://sua.psicologia.unam.mx/wp-content/uploads/2018/03/NeurobiologiaYAdaptacion.pdf
+2018-05-06 22:11:34,844 INFO Downloading file
+2018-05-06 22:11:35,025 INFO <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:645)>
+2018-05-06 22:11:35,026 INFO Error downloading file, skipping.
+2018-05-06 22:11:35,473 INFO Downloading file
+2018-05-06 22:11:40,310 INFO File 5000w	32137b	http://www.um.es/lafem/Actividades/2016-17/Conferenciantes/Nombela/academicofarmacia.pdf
+2018-05-06 22:11:40,543 INFO Downloading file
+2018-05-06 22:11:46,033 INFO File 3425w	22620b	http://www.seep.es/privado/documentos/publicaciones/1995/cap04.pdf
+2018-05-06 22:11:46,545 INFO Filesize too big (7180350), skipipng.
+2018-05-06 22:11:48,664 INFO Article 1616w	9693b	http://blog.enguita.info/2017/03/
+2018-05-06 22:11:51,490 INFO Article not enough long, skipping.
+2018-05-06 22:11:52,093 INFO Downloading file
+2018-05-06 22:11:55,008 INFO File 5000w	33417b	http://www.cota0.com/wp-content/PDFS/faunacavernicola.pdf
+2018-05-06 22:11:56,727 INFO Filesize too big (57205961), skipipng.
+2018-05-06 22:12:10,029 INFO Article not enough long, skipping.
+2018-05-06 22:12:10,751 INFO Downloading file
+2018-05-06 22:12:12,831 INFO Problem parsing file, skipping.
+2018-05-06 22:12:12,832 INFO The command `antiword tmp/tmp_file.doc` failed because the executable
+`antiword` is not installed on your system. Please make
+sure the appropriate dependencies are installed before using
+textract:
+
+    http://textract.readthedocs.org/en/latest/installation.html
+
+2018-05-06 22:12:14,270 INFO Article not enough long, skipping.
+2018-05-06 22:12:14,423 INFO Filesize too big (8264948), skipipng.
+2018-05-06 22:12:15,101 INFO MIME type not compatible, skipping
+2018-05-06 22:12:15,636 INFO Filesize too big (5503802), skipipng.
+2018-05-06 22:12:16,646 INFO Article not enough long, skipping.
+2018-05-06 22:12:16,646 INFO ################################################################################
+2018-05-06 22:12:16,646 INFO # Extracting text from remote sources for humanidades!
+2018-05-06 22:12:16,646 INFO ################################################################################
+2018-05-06 22:12:20,247 INFO Article 1984w	11966b	https://peripoietikes.hypotheses.org/336
+2018-05-06 22:12:41,777 INFO Source: Not enough words, skipping.
+2018-05-06 22:12:43,525 INFO Article 582w	3833b	https://es.wikipedia.org/wiki/Estructuralismo_(filosof%C3%ADa)
+2018-05-06 22:12:48,355 INFO Article not enough long, skipping.
+2018-05-06 22:12:56,173 INFO Article not enough long, skipping.
+2018-05-06 22:12:57,236 INFO Failed downloading webpage, skipping.
+2018-05-06 22:13:05,685 INFO Article not enough long, skipping.
+2018-05-06 22:13:08,749 INFO Article not enough long, skipping.
+2018-05-06 22:13:22,345 INFO Article not enough long, skipping.
+2018-05-06 22:19:16,085 INFO Starting
+2018-05-06 22:19:16,111 INFO Using debug links...
+2018-05-06 22:19:16,112 INFO Found 41 links for bellasartes
+2018-05-06 22:19:16,112 INFO Found 44 links for salud
+2018-05-06 22:19:16,112 INFO Found 39 links for derecho
+2018-05-06 22:19:16,112 INFO Found 41 links for humanidades
+2018-05-06 22:19:16,112 INFO Found 45 links for ingeniería
+2018-05-06 22:19:16,112 INFO ################################################################################
+2018-05-06 22:19:16,113 INFO # Extracting text from remote sources for bellasartes!
+2018-05-06 22:19:16,113 INFO ################################################################################
+2018-05-06 22:19:18,238 INFO Article 5000w	31818b	https://es.wikipedia.org/wiki/Expresionismo
+2018-05-06 22:19:19,762 INFO Article 3316w	19763b	http://www.ciudadpintura.com/SearchAutor?AutNum=11104
+2018-05-06 22:19:20,563 INFO Article not enough long, skipping.
+2018-05-06 22:19:23,814 INFO Article not enough long, skipping.
+2018-05-06 22:19:26,271 INFO Article 1229w	7585b	http://www.abc.es/20120716/cultura-arte/abci-enfermedad-mental-arte-201207131759.html
+2018-05-06 22:19:32,733 INFO Article 1741w	10490b	http://www.gmarticeballosart.com/2012/04/como-mirar-un-cuadro/
+2018-05-06 22:19:34,503 INFO Article not enough long, skipping.
+2018-05-06 22:19:35,398 INFO Article 733w	4265b	https://culturacolectiva.com/arte/pinturas-de-picasso-famosas/
+2018-05-06 22:19:36,713 INFO Source: Not enough words, skipping.
+2018-05-06 22:19:40,187 INFO Article 1081w	6371b	https://www.swissinfo.ch/spa/democraciadirecta/ventana-de-la-democracia--12-_el-milagro-de-picasso-en-basilea-/43574666
+2018-05-06 22:19:41,322 INFO Article 717w	4275b	http://cnnespanol.cnn.com/2016/01/04/las-obras-de-arte-mas-caras-del-mundo-por-que-siguen-rompiendo-los-records-en-subastas/
+2018-05-06 22:19:44,370 INFO Article not enough long, skipping.
+2018-05-06 22:19:46,279 INFO Article not enough long, skipping.
+2018-05-06 22:19:47,188 INFO Article not enough long, skipping.
+2018-05-06 22:19:50,568 INFO Article 5000w	30013b	https://es.wikipedia.org/wiki/Pablo_Picasso
+2018-05-06 22:19:50,940 INFO Article not enough long, skipping.
+2018-05-06 22:19:53,326 INFO Article not enough long, skipping.
+2018-05-06 22:19:53,926 INFO Article 923w	5291b	https://lavozdelmuro.net/los-25-cuadros-mas-caros-de-la-historia-del-arte-el-mas-caro-de-todos-te-dejara-boquiabierto/
+2018-05-06 22:20:00,715 INFO Failed downloading webpage, skipping.
+2018-05-06 22:20:01,684 INFO Source: Not enough words, skipping.
+2018-05-06 22:20:02,973 INFO Article not enough long, skipping.
+2018-05-06 22:20:04,208 INFO Article not enough long, skipping.
+2018-05-06 22:20:08,381 INFO Article not enough long, skipping.
+2018-05-06 22:20:11,508 INFO Source: Not enough words, skipping.
+2018-05-06 22:20:11,979 INFO Article 509w	3004b	http://www.expansion.com/fueradeserie/cultura/2017/03/02/58b80ec9ca474151098b46ae.html
+2018-05-06 22:20:12,683 INFO Article not enough long, skipping.
+2018-05-06 22:20:12,972 INFO Article not enough long, skipping.
+2018-05-06 22:20:18,982 INFO Article not enough long, skipping.
+2018-05-06 22:20:19,678 INFO Article 1124w	6826b	https://www.nytimes.com/es/2018/02/27/secretos-picasso-epoca-azul/
+2018-05-06 22:20:22,170 INFO Article 532w	3195b	https://elpais.com/diario/2011/02/16/cultura/1297810801_850215.html
+2018-05-06 22:20:24,689 INFO Article not enough long, skipping.
+2018-05-06 22:20:28,732 INFO Article 3242w	19538b	http://html.rincondelvago.com/picasso_2.html
+2018-05-06 22:20:30,425 INFO Article not enough long, skipping.
+2018-05-06 22:20:31,454 INFO Source: Not enough words, skipping.
+2018-05-06 22:20:34,153 INFO Article 847w	4813b	http://culturainquieta.com/es/arte/pintura/item/4553-los-20-cuadros-mas-caros-del-mundo.html
+2018-05-06 22:20:36,962 INFO Article 525w	3055b	http://www.elmundo.es/especiales/2011/10/cultura/guernica/picasso.html
+2018-05-06 22:20:43,328 INFO Article not enough long, skipping.
+2018-05-06 22:20:44,051 INFO Article 504w	3129b	http://www.elcultural.com/noticias/arte/Cezanne-Picasso-Van-Gogh-Gauguin-Matisse-y-Warhol-juntos-en-el-Thyssen/500734
+2018-05-06 22:20:45,339 INFO Article 820w	4698b	http://www.elcultural.com/revista/arte/Matisse-Picasso/4771
+2018-05-06 22:20:45,796 INFO Article 951w	5438b	https://www.elconfidencial.com/cultura/2013-04-08/pablo-picasso-40-anos-del-artista-mas-cotizado-del-mundo_495570/
+2018-05-06 22:20:46,905 INFO Article 1791w	10458b	http://www.alschner.es/es/artista
+2018-05-06 22:20:46,906 INFO ################################################################################
+2018-05-06 22:20:46,906 INFO # Extracting text from remote sources for salud!
+2018-05-06 22:20:46,906 INFO ################################################################################
+2018-05-06 22:20:48,163 INFO Downloading file
+2018-05-06 22:20:53,710 INFO File 5000w	32696b	http://www.bdigital.unal.edu.co/6465/1/598914.2012.pdf
+2018-05-06 22:20:54,611 INFO Article not enough long, skipping.
+2018-05-06 22:20:57,232 INFO Article not enough long, skipping.
+2018-05-06 22:20:57,973 INFO Failed downloading webpage, skipping.
+2018-05-06 22:20:58,771 INFO Article 794w	5019b	https://zaguan.unizar.es/record/48314?ln=es
+2018-05-06 22:21:04,662 INFO Article not enough long, skipping.
+2018-05-06 22:21:05,043 INFO Downloading file
+2018-05-06 22:21:10,727 INFO File 5000w	32374b	http://www.lourdes-luengo.es/unidadesbio/microbiologia/25Microbiologia.pdf
+2018-05-06 22:21:11,424 INFO Could not read filesize, skipping.
+2018-05-06 22:21:11,755 INFO Downloading file
+2018-05-06 22:21:12,101 INFO Problem parsing file, skipping.
+2018-05-06 22:21:12,102 INFO The command `pdftotext tmp/tmp_file.pdf -` failed with exit code 1
+------------- stdout -------------
+b''------------- stderr -------------
+b"Syntax Warning: May not be a PDF file (continuing anyway)\nSyntax Error (6): Illegal character <21> in hex string\nSyntax Error (8): Illegal character <6f> in hex string\nSyntax Error (10): Illegal character <74> in hex string\nSyntax Error (11): Illegal character <79> in hex string\nSyntax Error (12): Illegal character <70> in hex string\nSyntax Error (15): Illegal character <68> in hex string\nSyntax Error (16): Illegal character <74> in hex string\nSyntax Error (17): Illegal character <6d> in hex string\nSyntax Error (18): Illegal character <6c> in hex string\nSyntax Error (23): Illegal character <68> in hex string\nSyntax Error (24): Illegal character <74> in hex string\nSyntax Error (25): Illegal character <6d> in hex string\nSyntax Error (26): Illegal character <6c> in hex string\nSyntax Error (28): Illegal character <6c> in hex string\nSyntax Error (30): Illegal character <6e> in hex string\nSyntax Error (31): Illegal character <67> in hex string\nSyntax Error (32): Illegal character <3d> in hex string\nSyntax Error (33): Illegal character <22> in hex string\nSyntax Error (35): Illegal character <73> in hex string\nSyntax Error (36): Illegal character <2d> in hex string\nSyntax Error (38): Illegal character <53> in hex string\nSyntax Error (39): Illegal character <22> in hex string\nSyntax Error (47): Illegal character <68> in hex string\nSyntax Error (59): Illegal character <6d> in hex string\nSyntax Error (61): Illegal character <74> in hex string\nSyntax Error (65): Illegal character <68> in hex string\nSyntax Error (67): Illegal character <72> in hex string\nSyntax Error (68): Illegal character <73> in hex string\nSyntax Error (70): Illegal character <74> in hex string\nSyntax Error (71): Illegal character <3d> in hex string\nSyntax Error (72): Illegal character <22> in hex string\nSyntax Error (73): Illegal character <55> in hex string\nSyntax Error (74): Illegal character <54> in hex string\nSyntax Error (76): Illegal character <2d> in hex string\nSyntax Error (78): Illegal character <22> in hex string\nSyntax Error (87): Illegal character <6d> in hex string\nSyntax Error (89): Illegal character <74> in hex string\nSyntax Error (92): Illegal character <6e> in hex string\nSyntax Error (94): Illegal character <6d> in hex string\nSyntax Error (96): Illegal character <3d> in hex string\nSyntax Error (97): Illegal character <22> in hex string\nSyntax Error (98): Illegal character <76> in hex string\nSyntax Error (99): Illegal character <69> in hex string\nSyntax Error (101): Illegal character <77> in hex string\nSyntax Error (102): Illegal character <70> in hex string\nSyntax Error (103): Illegal character <6f> in hex string\nSyntax Error (104): Illegal character <72> in hex string\nSyntax Error (105): Illegal character <74> in hex string\nSyntax Error (106): Illegal character <22> in hex string\nSyntax Error (109): Illegal character <6f> in hex string\nSyntax Error (110): Illegal character <6e> in hex string\nSyntax Error (111): Illegal character <74> in hex string\nSyntax Error (113): Illegal character <6e> in hex string\nSyntax Error (114): Illegal character <74> in hex string\nSyntax Error (115): Illegal character <3d> in hex string\nSyntax Error (116): Illegal character <22> in hex string\nSyntax Error (117): Illegal character <77> in hex string\nSyntax Error (118): Illegal character <69> in hex string\nSyntax Error (120): Illegal character <74> in hex string\nSyntax Error (121): Illegal character <68> in hex string\nSyntax Error (122): Illegal character <3d> in hex string\nSyntax Error (125): Illegal character <76> in hex string\nSyntax Error (126): Illegal character <69> in hex string\nSyntax Error (129): Illegal character <2d> in hex string\nSyntax Error (130): Illegal character <77> in hex string\nSyntax Error (131): Illegal character <69> in hex string\nSyntax Error (133): Illegal character <74> in hex string\nSyntax Error (134): Illegal character <68> in hex string\nSyntax Error (135): Illegal character <22> in hex string\nSyntax Error (144): Illegal character <6d> in hex string\nSyntax Error (146): Illegal character <74> in hex string\nSyntax Error (149): Illegal character <68> in hex string\nSyntax Error (150): Illegal character <74> in hex string\nSyntax Error (151): Illegal character <74> in hex string\nSyntax Error (152): Illegal character <70> in hex string\nSyntax Error (153): Illegal character <2d> in hex string\nSyntax Error (155): Illegal character <71> in hex string\nSyntax Error (156): Illegal character <75> in hex string\nSyntax Error (157): Illegal character <69> in hex string\nSyntax Error (158): Illegal character <76> in hex string\nSyntax Error (159): Illegal character <3d> in hex string\nSyntax Error (160): Illegal character <22> in hex string\nSyntax Error (161): Illegal character <58> in hex string\nSyntax Error (162): Illegal character <2d> in hex string\nSyntax Error (163): Illegal character <55> in hex string\nSyntax Error (165): Illegal character <2d> in hex string\nSyntax Error (167): Illegal character <6f> in hex string\nSyntax Error (168): Illegal character <6d> in hex string\nSyntax Error (169): Illegal character <70> in hex string\nSyntax Error (171): Illegal character <74> in hex string\nSyntax Error (172): Illegal character <69> in hex string\nSyntax Error (174): Illegal character <6c> in hex string\nSyntax Error (176): Illegal character <22> in hex string\nSyntax Error (179): Illegal character <6f> in hex string\nSyntax Error (180): Illegal character <6e> in hex string\nSyntax Error (181): Illegal character <74> in hex string\nSyntax Error (183): Illegal character <6e> in hex string\nSyntax Error (184): Illegal character <74> in hex string\nSyntax Error (185): Illegal character <3d> in hex string\nSyntax Error (186): Illegal character <22> in hex string\nSyntax Error (187): Illegal character <49> in hex string\nSyntax Error (189): Illegal character <3d> in hex string\nSyntax Error (192): Illegal character <47> in hex string\nSyntax Error (194): Illegal character <22> in hex string\nSyntax Error (195): Illegal character <2f> in hex string\nSyntax Error: Couldn't find trailer dictionary\nSyntax Error: Couldn't find trailer dictionary\nSyntax Error: Couldn't read xref table\n"
+2018-05-06 22:21:27,834 INFO Article 5000w	32260b	http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0034-74502008000300012
+2018-05-06 22:21:29,215 INFO Article 1458w	9062b	https://jolimu.wordpress.com/2008/12/10/biomaquinas-sin-evolucion-la-paradoja-anti-darwin/
+2018-05-06 22:21:30,812 INFO Article not enough long, skipping.
+2018-05-06 22:21:30,961 INFO Filesize too big (21222014), skipipng.
+2018-05-06 22:21:31,867 INFO Could not read filesize, skipping.
+2018-05-06 22:21:32,490 INFO Article 1165w	7426b	http://m.patatabrava.com/es/apunte/347731/preguntas-microbiologia
+2018-05-06 22:21:32,647 INFO Downloading file
+2018-05-06 22:21:33,332 INFO Source: Not enough words, skipping.
+2018-05-06 22:21:33,938 INFO Filesize too big (8428434), skipipng.
+2018-05-06 22:21:34,080 INFO Downloading file
+2018-05-06 22:21:37,788 INFO File 5000w	32114b	http://raed.academy/wp-content/uploads/2017/05/Web_LibroRAed_Turbon59.pdf
+2018-05-06 22:21:39,806 INFO Article not enough long, skipping.
+2018-05-06 22:21:40,659 INFO Filesize too big (5244132), skipipng.
+2018-05-06 22:21:42,805 INFO Article not enough long, skipping.
+2018-05-06 22:21:46,452 INFO Source: Not enough words, skipping.
+2018-05-06 22:21:47,096 INFO Downloading file
+2018-05-06 22:21:56,719 INFO File 3956w	25975b	http://www.redalyc.org/pdf/1793/179346558009.pdf
+2018-05-06 22:21:57,685 INFO Filesize too big (6312841), skipipng.
+2018-05-06 22:22:00,445 INFO Article not enough long, skipping.
+2018-05-06 22:22:02,415 INFO Article 1834w	11419b	http://www.infocatolica.com/blog/notelacuenten.php/1410260458-complejidades-irreducibles-la
+2018-05-06 22:22:04,398 INFO Article not enough long, skipping.
+2018-05-06 22:22:05,065 INFO Article not enough long, skipping.
+2018-05-06 22:22:05,791 INFO Downloading file
+2018-05-06 22:22:08,182 INFO File 3429w	22632b	http://sua.psicologia.unam.mx/wp-content/uploads/2018/03/NeurobiologiaYAdaptacion.pdf
+2018-05-06 22:22:08,439 INFO Downloading file
+2018-05-06 22:22:08,556 INFO <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:645)>
+2018-05-06 22:22:08,557 INFO Error downloading file, skipping.
+2018-05-06 22:22:08,914 INFO Downloading file
+2018-05-06 22:22:12,012 INFO File 5000w	32579b	http://www.um.es/lafem/Actividades/2016-17/Conferenciantes/Nombela/academicofarmacia.pdf
+2018-05-06 22:22:12,095 INFO Downloading file
+2018-05-06 22:22:14,398 INFO File 3425w	22620b	http://www.seep.es/privado/documentos/publicaciones/1995/cap04.pdf
+2018-05-06 22:22:14,527 INFO Filesize too big (7180350), skipipng.
+2018-05-06 22:22:16,119 INFO Article 1616w	9693b	http://blog.enguita.info/2017/03/
+2018-05-06 22:22:18,054 INFO Article not enough long, skipping.
+2018-05-06 22:22:18,509 INFO Downloading file
+2018-05-06 22:22:21,152 INFO File 5000w	33709b	http://www.cota0.com/wp-content/PDFS/faunacavernicola.pdf
+2018-05-06 22:22:23,892 INFO Filesize too big (57205961), skipipng.
+2018-05-06 22:22:41,562 INFO Article not enough long, skipping.
+2018-05-06 22:22:41,764 INFO Downloading file
+2018-05-06 22:22:44,155 INFO File 5000w	35141b	http://www.oupe.es/es/mas-areas-educacion/bachillerato/biologia-y-geologia/proyteselanacional/Recursos%20Destacados/Programacion_Tesela_Biologia_2_BACH_Aragon.doc
+2018-05-06 22:22:45,320 INFO Article not enough long, skipping.
+2018-05-06 22:22:45,424 INFO Filesize too big (8264948), skipipng.
+2018-05-06 22:22:46,197 INFO MIME type not compatible, skipping
+2018-05-06 22:22:46,855 INFO Filesize too big (5503802), skipipng.
+2018-05-06 22:22:47,942 INFO Article not enough long, skipping.
+2018-05-06 22:22:47,942 INFO ################################################################################
+2018-05-06 22:22:47,942 INFO # Extracting text from remote sources for derecho!
+2018-05-06 22:22:47,942 INFO ################################################################################
+2018-05-06 22:22:48,053 INFO Could not read filesize, skipping.
+2018-05-06 22:22:48,220 INFO Downloading file
+2018-05-06 22:22:48,549 INFO File 765w	5858b	http://www.poderjudicial.es/stfls/TRIBUNAL%20SUPREMO/ACUERDOS%20y%20ESTUDIOS%20DOCTRINALES/FICHERO/aindice_1.0.01.pdf
+2018-05-06 22:22:48,961 INFO Source: Not enough words, skipping.
+2018-05-06 22:22:50,807 INFO Source: Not enough words, skipping.
+2018-05-06 22:22:52,118 INFO Article 1363w	8407b	http://www.filosofiadelderechocolombia.net/2009/04/trabajo-no-1-escuela-de-la-exegesis.html
+2018-05-06 22:22:54,321 INFO Article not enough long, skipping.
+2018-05-06 22:22:56,498 INFO Source: Not enough words, skipping.
+2018-05-06 22:23:01,525 INFO Article 2461w	16030b	http://www.tuabogadodefensor.com/derechos-individuales/jurisprudencia/
+2018-05-06 22:23:02,678 INFO Downloading file
+2018-05-06 22:23:05,579 INFO File 5000w	31215b	http://www.ubo.cl/icsyc/wp-content/uploads/2011/09/13-Schiele.pdf
+2018-05-06 22:23:06,792 INFO Article not enough long, skipping.
+2018-05-06 22:23:07,018 INFO Downloading file
+2018-05-06 22:23:07,800 INFO File 4687w	29253b	http://www.galeon.com/josicu/filder/escuelas.pdf
+2018-05-06 22:23:08,318 INFO Source: Not enough words, skipping.
+2018-05-06 22:23:10,600 INFO Article 4541w	30788b	https://biblioteca.unizar.es/biblioteca-derecho/guia-jurisprudencia-revistas
+2018-05-06 22:23:11,504 INFO Article 819w	5171b	http://www.civil-mercantil.com/seleccion-jurisprudencia-derecho-civil-16-30-abril-2016.html
+2018-05-06 22:23:25,537 INFO Source: Not enough words, skipping.
+2018-05-06 22:23:26,300 INFO Article 4333w	26799b	http://www.monografias.com/trabajos102/metodos-creacion-e-interpretacion-del-derecho/metodos-creacion-e-interpretacion-del-derecho.shtml
+2018-05-06 22:23:29,300 INFO Article not enough long, skipping.
+2018-05-06 22:24:14,084 INFO Article not enough long, skipping.
+2018-05-06 22:24:14,340 INFO Downloading file
+2018-05-06 22:24:15,677 INFO File 5000w	31798b	http://www.indret.com/pdf/843_es.pdf
+2018-05-06 22:24:16,737 INFO Article 4090w	25568b	http://www.monografias.com/trabajos98/derecho-positivo/derecho-positivo.shtml
+2018-05-06 22:24:19,762 INFO Article not enough long, skipping.
+2018-05-06 22:24:22,947 INFO Article 607w	3848b	https://www.iberley.es/temas/derecho-procesal-civil-53611
+2018-05-06 22:24:24,759 INFO Article 4676w	29548b	https://es.wikipedia.org/wiki/Derecho
+2018-05-06 22:24:24,995 INFO Downloading file
+2018-05-06 22:24:25,827 INFO File 5000w	34753b	https://biblioteca.unizar.es/sites/biblioteca.unizar.es/files/users/Derecho.12/Guias/guia_jurisprudencia.pdf
+2018-05-06 22:24:31,415 INFO Article not enough long, skipping.
+2018-05-06 22:24:31,985 INFO Article not enough long, skipping.
+2018-05-06 22:24:35,764 INFO Source: Not enough words, skipping.
+2018-05-06 22:24:43,794 INFO Article not enough long, skipping.
+2018-05-06 22:24:57,496 INFO Article not enough long, skipping.
+2018-05-06 22:24:58,236 INFO Downloading file
+2018-05-06 22:25:00,007 INFO File 5000w	31881b	http://www.scielo.org.co/pdf/ccso/v15n29/v15n29a03.pdf
+2018-05-06 22:25:01,710 INFO Article 3542w	22263b	https://unybook.com/apuntes/file-0df8a72dba9c63370126298311c71e09/derecho-civil-i/tema-10-la-jurisprudencia
+2018-05-06 22:25:07,438 INFO Source: Not enough words, skipping.
+2018-05-06 22:25:08,833 INFO Article not enough long, skipping.
+2018-05-06 22:25:11,795 INFO Article 4182w	26840b	http://www.posmodernia.com/el-derecho-civil-como-elemento-conformador-de-la-identidad-nacional-examen-desde-la-perspectiva-del-caso-catalan/
+2018-05-06 22:25:15,413 INFO Article 2347w	15432b	https://www.u-cursos.cl/derecho/2005/2/D124A0312/1/material_docente/previsualizar?id_material=76691
+2018-05-06 22:26:05,882 INFO Article not enough long, skipping.

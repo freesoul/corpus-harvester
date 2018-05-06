@@ -32,7 +32,7 @@ class Harvest:
 
     DATA_FOLDER = 'data'
     TMP_FOLDER = 'tmp'
-    TMP_FILE = 'tmp_file.pdf'
+    TMP_FILE = 'tmp_file'
 
     DATA_FILE_TEMPLATE = 'data_{0}.txt' # {0} is a counter for each source
 
@@ -54,15 +54,23 @@ class Harvest:
     MAX_WORDS_PER_SOURCE = 5000
 
     # Textract file parsing
-    SUPPORTED_FILES = ['csv', 'doc', 'docx', 'eml', 'epub', 'odt',
-                                'pdf', 'pptx', 'rtf', 'xlsx', 'xls', 'json', 'msg']
+    SUPPORTED_FILES = [ 'csv', 'doc', 'docx', 'eml', 'epub', 'odt',
+                        'pdf', 'pptx', 'rtf', 'xlsx', 'xls', 'json', 'msg']
 
     HTML_PAGES = ['html', 'htm', 'php', 'asp', 'aspx']
 
-    SUPPORTED_MIME_TYPES = ['text/csv','application/msword','application/epub+zip',
-                            'application/json','application/vnd.oasis.opendocument.text',
-                            'application/pdf','application/vnd.ms-powerpoint','application/rtf',
-                            'application/vnd.ms-excel','application/xml']
+    SUPPORTED_MIME_TYPES = {
+    'text/csv':'csv',
+    'application/msword':'doc',
+    'application/epub+zip':'epub',
+    'application/json':'json',
+    'application/vnd.oasis.opendocument.text':'odt',
+    'application/pdf':'pdf',
+    'application/vnd.ms-powerpoint':'pptx',
+    'application/rtf':'rtf',
+    'application/vnd.ms-excel':'xls',
+    'application/xml':'xls'
+    }
 
     MAX_REMOTE_FILE_SIZE = 3 * 1024 * 1024
     HTML = 1
@@ -245,7 +253,7 @@ class Harvest:
                         if os.path.isfile(file_path):
                             os.unlink(file_path)
                     except Exception as e:
-                        print(e)
+                        self.logger.info(e)
             else:
                 num_files = len([f for f in os.listdir(current_folder) if os.path.isfile(f)])
                 file_counter = num_files + 1
@@ -256,7 +264,11 @@ class Harvest:
 
             for link in links:
 
-                file_type, file_size = self._get_link_info(link)
+                file_type, file_size, file_ext = self._get_link_info(link)
+
+                if file_type == None:
+                    self.logger.error("Error getting link info, skipping.")
+                    continue
 
                 ############################
                 #
@@ -322,8 +334,16 @@ class Harvest:
                         continue
 
                     self.logger.info("Downloading file")
-                    local_file_path = "{0}/{1}".format(self.TMP_FOLDER, self.TMP_FILE)
-                    self._download_file(link, "{0}/{1}".format(self.TMP_FOLDER, self.TMP_FILE))
+                    local_file_path = "{0}/{1}{2}".format(
+                        self.TMP_FOLDER,
+                        self.TMP_FILE,
+                        file_ext # Required by textract to parse correctly files
+                    )
+                    download_status = self._download_file(link, local_file_path)
+
+                    if not download_status:
+                     self.logger.info("Error downloading file, skipping.")
+                     continue
 
                     try:
                         file_parsed = textract.process(local_file_path).decode('utf-8')
@@ -389,10 +409,14 @@ class Harvest:
 
     def _get_link_info(self, link):
 
-        headers = requests.get(link, stream=True, verify=False).headers
+        try:
+            headers = requests.get(link, stream=True, verify=False).headers
+        except Exception as e:
+            self.logger.error(str(e))
+            return None, None, None
 
-        # Test if its a supported file or not
         file_type = self.UNSUPPORTED_FILE
+        file_ext = ''
 
         # Get file format by link
         url_path = urlparse(link).path
@@ -402,19 +426,21 @@ class Harvest:
                 file_type = self.SUPPORTED_FILE
             elif extension[1:] in self.HTML_PAGES:
                 file_type = self.HTML
+            file_ext = extension # includes dot
 
         # If still unsupported, try to find by MIME types
-
         if file_type == self.UNSUPPORTED_FILE and 'content-type' in headers:
-            if 'text/html' in headers['content-type']:
+            mime_type = headers['content-type']
+            if 'text/html' in mime_type:
                 file_type = self.HTML
-            elif headers['content-type'] in self.SUPPORTED_MIME_TYPES:
+            elif mime_type in self.SUPPORTED_MIME_TYPES.keys():
                 file_type = self.SUPPORTED_FILES
+                file_ext = '.{0}'.format(self.SUPPORTED_MIME_TYPES[mime_type])
 
         # Get file size
         file_size =  None if 'content-length' not in headers else int(headers['content-length'])
 
-        return file_type, file_size
+        return file_type, file_size, file_ext
 
 
 
@@ -426,7 +452,11 @@ class Harvest:
 
     def _download_file(self, link, local_file_path):
         if not os.path.isdir(self.TMP_FOLDER): os.mkdir(self.TMP_FOLDER)
-        remote_file = urllib.request.urlopen(link, context=ssl.CERT_NONE)
+        try:
+            remote_file = urllib.request.urlopen(link, context=ssl.CERT_NONE)
+        except Exception as e:
+            self.logger.info(str(e))
+            return None
         local_file = open(local_file_path, 'wb')
         local_file.write(remote_file.read())
         size = local_file.tell()
